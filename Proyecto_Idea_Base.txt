@@ -1,0 +1,23 @@
+Nuestro proyecto se basa en desarrollar una aplicación para el brazo robótico que nos permita:
+
+-Manejar los servomotores, los principales son: el del hombro, codo y muñeca/pinza 
+
+-Poder visualizar en tiempo real lo que muestra la camara
+
+Materiales como:
+
+-Camara ESP 32 cam  
+
+-Sensores de fuerza y posición
+
+Una explicación mas resumida es :
+
+Servomotor: Es un tipo de motor que incorpora un circuito de control interno, lo que permite controlar con precisión la posición del eje de salida.
+
+Ángulo de rotación: La mayoría de los servomotores estándar tienen un rango de rotación de aproximadamente 0 a 180 grados. Esto significa que puedes controlar la posición del servo en un rango específico de ángulos.
+
+Bibliotecas y Placas de Control: Para manejar servomotores de manera más sencilla, puedes utilizar bibliotecas de software específicas para tu plataforma de desarrollo (como Arduino, Raspberry Pi, etc.) Estas bibliotecas te permiten enviar los pulsos PWM necesarios para controlar los servomotores de manera fácil y precisa. Además, hay placas de control específicas para servomotores que simplifican aún más su manejo.
+
+La cámara: La cámara integrada en el ESP32-CAM te permite capturar imágenes o incluso videos. Es una cámara de bajo costo y tamaño compacto, lo que la hace ideal para aplicaciones donde el espacio y el presupuesto son limitados. Se la puede utilizar para proyectos de vigilancia, monitoreo remoto, detección de movimiento, reconocimiento facial, entre otros.
+
+Microcontrolador ESP32: El ESP32 es un microcontrolador de bajo consumo de energía y alta capacidad de procesamiento. Tiene capacidades de conectividad Wi-Fi y Bluetooth integradas, lo que te permite conectar fácilmente tu dispositivo a una red Wi-Fi o a otros dispositivos Bluetooth.
