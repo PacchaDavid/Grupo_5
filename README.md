@@ -16,7 +16,7 @@ Servomotores SG 90: Es un pequeño actuador rotativo o bien motor, que permite u
 Este tipo de servomotores son utilizado en gran variedad de proyectos de electrónica, robótica, carros de control remoto, aeronaves y más. Funcionan con la mayoría de tarjetas electrónicas de control con microcontroladores, como por ejemplo las tarjetas de Arduino, Nodemcu, Esp32, Pic´s y Raspberry Pi y otras.
 
 
-![image](https://github.com/PacchaDavid/Grupo_5/assets/166523336/dff08630-573b-4226-bead-01a9fd234f79)
+![image](https://github.com/PacchaDavid/Grupo_5/assets/166523336/fbe0caed-2daa-48ca-b68d-33cc1d429edd)
 
 
 Cables Jumper: El cable jumper proporciona una manera fácil para construir su propio circuito en una placa. Estos cables son flexibles con ambos extremos para una fácil conexión al Protoboard.
