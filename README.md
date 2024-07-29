@@ -1,11 +1,44 @@
 # PIS_SegundoCiclo
 
-Enlace hacia la página web: https://pacchadavid.github.io/
 
+DIAGRAMA DE CLASES DEL PROYECTO
 
-![image](https://github.com/PacchaDavid/Grupo_5/assets/166523346/a81a5e49-f812-4946-bc3e-c10acd84ff0e)
+![brazoRobotico](https://github.com/user-attachments/assets/e5312774-2dc1-4acd-b76b-1b44fad07824)
 
+CASOS DE USO
 
+![casosDeUso](https://github.com/user-attachments/assets/e89552f9-38f2-4d84-9058-ec01fb1b3d03)
+
+HISTORIAS DE USUARIO
+
+![UH1](https://github.com/user-attachments/assets/6b1d95e4-7f6a-4e32-a1cf-6ce5f784c395)
+![UH2](https://github.com/user-attachments/assets/37bae591-c3cb-4ee4-b7c7-b6d45b572709)
+![UH3](https://github.com/user-attachments/assets/271452de-4cd6-4af8-887f-2e9a373f9304)
+
+INSTRUCCIONES PARA UTILIZAR EL CODIGO DE LA PAGINA WEB
+
+Prerrequisitos
+- Tener instalado python en su equipo
+- Tener instalado el gestor de dependencias pip
+- Tener configurado python en las variables de entorno de su sistema
+- Contar con un IDE de propósito general como Visual Studio Code o uno más orientado a django como Pycharm 
+Aquí algunos enlaces para completar estos requisitos
+
+https://www.bing.com/ck/a?!&&p=fda7a64617951239JmltdHM9MTcyMjEyNDgwMCZpZ3VpZD0xNmQ5ODcwNC0zM2I2LTZkNDgtMjhjZi05M2IxMzIxOTZjYWUmaW5zaWQ9NTIwMw&ptn=3&ver=2&hsh=3&fclid=16d98704-33b6-6d48-28cf-93b132196cae&psq=como+instalar+python&u=a1aHR0cHM6Ly9raW5zdGEuY29tL2VzL2Jhc2UtZGUtY29ub2NpbWllbnRvL2luc3RhbGFyLXB5dGhvbi8&ntb=1
+
+https://www.bing.com/ck/a?!&&p=43ad509272750edfJmltdHM9MTcyMjEyNDgwMCZpZ3VpZD0xNmQ5ODcwNC0zM2I2LTZkNDgtMjhjZi05M2IxMzIxOTZjYWUmaW5zaWQ9NTIxNA&ptn=3&ver=2&hsh=3&fclid=16d98704-33b6-6d48-28cf-93b132196cae&psq=como+instalar+vscode&u=a1aHR0cHM6Ly9jb2RlLnZpc3VhbHN0dWRpby5jb20vZG93bmxvYWQ&ntb=1
+
+Una vez que hayamos cumplido los requisitos podemos empezar
+
+SIGA LAS INSTRUCCIONES
+
+1. Clonar o descargar este repositorio en su máquina de trabajo.
+2. Utilizar algún Entorno de desarrollo que le permita interactuar con la consola de comandos
+3. Abrir la carpeta "gestionBrazoRobótico" desde su Entorno de desarrollo
+4. Ejecutar el comando 'pip install -r requirements.txt' en la consola de su entorno
+5. Ejecutar el comando 'python manage.py runserver' en la consola
+6. Abrir el navegador e ingresar a la ruta 'localhost:8000'
+7. Navegar a través del contenido de la página :)
 
 MATERIALES QUE SE USARAN PARA LA REALIZACION DE NUESTRO BRAZO ROBOTICO A CONTROL 
 
@@ -37,8 +70,7 @@ Placa de Pruebas Protoboard: Una placa de pruebas o placa de inserción (en ingl
 Como podemos notar estos son los materiales basicos que implementaremos para la realizacion de nuestro proyecto integrador, mediante el paso de las unidades iremos añadiendo mas componentes esenciales para la contruccion optima y eficaz de nuestro brazo a control remoto hasta tener el producto final.
 
 
-
-
+Enlace hacia página web alternativa: https://pacchadavid.github.io/
 
 
 
