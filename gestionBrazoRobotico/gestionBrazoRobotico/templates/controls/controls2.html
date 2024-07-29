@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Controles 2</title>
+  <title>Controles</title>
   <link rel="stylesheet" href="{% static 'css/controls2.css' %}">
   <link rel="icon" href="{% static 'imgs/brazoIcono.ico' %}">
 </head>
@@ -12,8 +12,7 @@
   <nav>
     <ul>
       <li><a href="{% url 'home' %}">Inicio</a></li>
-      <li><a href="{% url 'controls' %}">Controles 1</a></li>
-      <li><a href="{% url 'controls2' %}">Controles 2</a></li>
+      <li><a href="{% url 'ayuda' %}">¿Cómo utilizar?</a></li>
     </ul>
   </nav>
   <div class="container">
@@ -28,14 +27,24 @@
       </div>
     </div>
     <div class="box">
+      <div class="buttons">
+        <img src="{% static 'imgs/icons/brazoIcono.ico' %}" alt="BrazoIcono" id="brazoIcono">
+      </div>
       <center>
         <div class="buttons">
-          <button class="controlButton" id="arriba">arriba</button><br>
-          <button class="controlButton" id="izquierda" >izquierda</button>
-          <button class="controlButton" id="derecha" >derecha</button><br>
-          <button class="controlButton" id="abajo" >abajo</button><br><br><br>
-          <button class="controlButton" id="adelante" >adelante</button><br>
-          <button class="controlButton" id="atras">_atras_</button><br><br>
+          <div class="sub-control">
+            <div class="in-control">
+              <br>
+              <button class="controlButton" id="adelante" >adelante</button><br>
+              <button class="controlButton" id="atras">_atras_</button>
+            </div>
+            <div class="in-control">
+              <button class="controlButton" id="arriba">arriba</button><br>
+              <button class="controlButton" id="izquierda" >izquierda</button>
+              <button class="controlButton" id="derecha" >derecha</button><br>
+              <button class="controlButton" id="abajo" >abajo</button>
+            </div>
+          </div>
           <button class="controlButton" id="pinza">pinza</button>
         </div>
         <div class="buttons">

@@ -15,16 +15,6 @@ def about_us(request):
 def info(request):
     return render(request,'principal/info.html')
 
-def materials(request):
-    return render(request,'principal/materials.html')
-
-def graphics(request):
-    return render(request,'principal/graphics.html')
-
-@login_required
-def controls(request):
-    return render(request,'controls/controls.html')
-
 def random_user(request):
     return render(request,'principal/randomuser.html',services.get_random_user())
 
@@ -32,8 +22,13 @@ def random_user(request):
 def chiste_del_dia(request):
     return render(request,'principal/chiste.html',services.get_chiste())
 
+@login_required
 def control2(request):
     return render(request,'controls/controls2.html')
+
+@login_required
+def ayuda(request):
+    return render(request,'controls/ayuda.html')
 
 class BrazoRoboticoViewSet(viewsets.ModelViewSet):
     queryset = BrazoRobotico.objects.all()

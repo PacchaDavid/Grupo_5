@@ -58,8 +58,17 @@ nav ul li a {
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
-    margin-top: 15px;
-} 
+}
+
+.sub-control {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.in-control {
+    width: 48%;
+    padding: 1%;
+}
 
 .controlButton {
     margin-bottom: 2%;
@@ -88,6 +97,18 @@ input[type="text"] {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
+}
+
+#pinza {
+    width: 70%;
+    margin: 0 15%;
+}
+
+#brazoIcono {
+    width: 38%;
+    height: auto;
+    border-radius: 50%;
+    margin: 1% 31%;
 }
 
 

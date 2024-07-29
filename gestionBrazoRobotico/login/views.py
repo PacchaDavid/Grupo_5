@@ -35,8 +35,4 @@ def login_usuario(request):
 def logout_usuario(request):
     logout(request)
     return redirect('login')
-
-@login_required 
-def informacion_sensible(request):
-    return render(request,'informacion_sensible.html',{})
     

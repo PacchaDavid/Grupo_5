@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title%}{% endblock %}</title>
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-  <link rel="icon" href="{% static 'imgs/brazoIcono.ico' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'imgs/icons/brazoIcono.ico' %}" type="image/x-icon">
   {% block styles %}{% endblock %}
 </head>
 <body>
@@ -17,7 +17,7 @@
         <li><a href="{% url 'home' %}">Inicio</a></li>
         <li><a href="{% url 'about_us' %}">Sobre Nosotros</a></li>
         <li><a href="{% url 'info' %}">Información</a></li>
-        <li><a href="{% url 'controls' %}">Controles 1</a></li>
+        <li><a href="{% url 'controls2' %}">Controles</a></li>
         <li><a href="{% url 'randomuser' %}">Random User</a></li>
         <li><a href="{% url 'chiste_del_dia' %}">Chiste del Día</a></li>
       </ul>
