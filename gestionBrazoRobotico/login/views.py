@@ -25,7 +25,7 @@ def login_usuario(request):
         if form.is_valid():
             user = form.get_user()
             login(request,user)
-            return redirect('informacion_sensible')
+            return redirect('home')
         else:
             messages.error(request,'Nombre de usuario o contraseña incorrectos')
     else: 

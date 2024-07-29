@@ -34,3 +34,31 @@ def chiste_del_dia(request):
 
 def control2(request):
     return render(request,'controls/controls2.html')
+
+class BrazoRoboticoViewSet(viewsets.ModelViewSet):
+    queryset = BrazoRobotico.objects.all()
+    serializer_class = BrazoRoboticoSerializer
+
+class Esp32CamViewSet(viewsets.ModelViewSet):
+    queryset = Esp32Cam.objects.all()
+    serializer_class = Esp32CamSerializer
+
+class CamaraViewSet(viewsets.ModelViewSet):
+    queryset = Camara.objects.all()
+    serializer_class = CamaraSerializer
+
+class PinViewSet(viewsets.ModelViewSet):
+    queryset = Pin.objects.all()
+    serializer_class = PinSerializer
+
+class ProtoboardViewSet(viewsets.ModelViewSet):
+    queryset = Protoboard.objects.all()
+    serializer_class = ProtoboardSerializer
+
+class FuenteAlimentacionViewSet(viewsets.ModelViewSet):
+    queryset = FuenteAlimentacion.objects.all()
+    serializer_class = FuenteAlimentacionSerializer
+
+class ServoMotorViewSet(viewsets.ModelViewSet):
+    queryset = Servo.objects.all()
+    serializer_class = ServoMotorSerializer
