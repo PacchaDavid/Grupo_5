@@ -1,6 +1,8 @@
 # PIS_SegundoCiclo
 
 
+Este es el repositorio oficial del Proyecto: TeleRobot Grupo5... Aquí es donde se encuentra el código fuente de la página web, más el código de arduino, los diagramas y un juego creado por los integrantes del equipo.
+
 DIAGRAMA DE CLASES DEL PROYECTO
 
 ![brazoRobotico](https://github.com/user-attachments/assets/e5312774-2dc1-4acd-b76b-1b44fad07824)
