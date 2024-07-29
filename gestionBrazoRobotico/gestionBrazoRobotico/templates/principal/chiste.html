@@ -1,0 +1,17 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}Chiste del día{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/chiste.css' %}">
+{% endblock %}
+{% block content %}
+  <h2>Chiste del día</h2>
+  <h3>Tipo: {{type}}</h3>
+  <h3>Categoría: {{category}}</h3>
+  {% if type == 'single' %}
+    <p>{{joke}}</p>
+  {% elif type == 'twopart' %}
+    <p>- {{setup}}</p>
+    <p>- {{delivery}}</p>
+  {% endif %}  
+{% endblock %}

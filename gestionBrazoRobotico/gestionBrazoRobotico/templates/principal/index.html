@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %} Inicio {% endblock %}
+{% block styles %} 
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+{% block content %}
+  <h2>Bienvenido</h2>
+  <img src="{% static 'imgs/BrazoModelo.webp' %}" alt="bracito-robotico">
+  <div class = 'paragraph'>
+    <p>Nos complace darle la bienvenida a nuestra página web, diseñada con el objetivo primordial de presentar nuestro proyecto: TeleRobot. Este proyecto surge como respuesta a la necesidad de abordar los desafíos ambientales que enfrenta nuestro planeta en la actualidad, particularmente en lo que respecta a la contaminación.</p>
+
+    <p>Creemos firmemente en el poder de la tecnología para ofrecer soluciones innovadoras y efectivas. TeleRobot representa nuestro compromiso con el desarrollo de soluciones tecnológicas que aborden de manera integral el problema de la contaminación.</p>
+    
+    <p>Estamos convencidos de que el manejo adecuado de los residuos es fundamental para lograr este objetivo, y es por eso que hemos centrado nuestros esfuerzos en desarrollar soluciones que permitan una gestión más eficiente y responsable de los mismos.</p>
+    
+    <p>A través de esta plataforma, nos esforzamos por proporcionar información apropiada sobre nuestro proyecto.</p>
+    
+    <p>Únase a nosotros en este emocionante viaje hacia un futuro más limpio y sostenible. Juntos, podemos marcar la diferencia y dejar un legado positivo para las generaciones venideras.</p>
+    <p id = "info">información del modelo 3D del brazo <a href="https://www.thingiverse.com/thing:1015238" target="_blank">aquí</a></p>
+  </div> 
+{% endblock %}

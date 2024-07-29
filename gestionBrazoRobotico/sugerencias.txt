@@ -1,0 +1,6 @@
+- las fotos: sobre nosotros
+- cambiar Diagrama de clases e implementar los modelos
+- subir al repositorio todos los cambios y diagramas
+
+username: pis_grupo_5
+password: ProyectoIntegradorDeSaberesII

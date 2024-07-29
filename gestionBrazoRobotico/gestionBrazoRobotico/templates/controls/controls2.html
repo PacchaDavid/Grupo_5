@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controles 2</title>
+  <link rel="stylesheet" href="{% static 'css/controls2.css' %}">
+  <link rel="icon" href="{% static 'imgs/brazoIcono.ico' %}">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{% url 'home' %}">Inicio</a></li>
+      <li><a href="{% url 'controls' %}">Controles 1</a></li>
+      <li><a href="{% url 'controls2' %}">Controles 2</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="box">
+      <img src="" id="cameraImage" style="width: 90%;height: 60vh;">
+      <div class="buttons"> 
+        <center>
+          <button class="controlButton" id="conectar">Conectar</button>
+          <input type="text" id="ipInput" placeholder="Ingrese una dirección IP">
+          <button class="controlButton" id="cerrarConexion" onclick="cerrarConexion()" style="display: none;">Cerrar Conexión</button>
+        </center>
+      </div>
+    </div>
+    <div class="box">
+      <center>
+        <div class="buttons">
+          <button class="controlButton" id="arriba">arriba</button><br>
+          <button class="controlButton" id="izquierda" >izquierda</button>
+          <button class="controlButton" id="derecha" >derecha</button><br>
+          <button class="controlButton" id="abajo" >abajo</button><br><br><br>
+          <button class="controlButton" id="adelante" >adelante</button><br>
+          <button class="controlButton" id="atras">_atras_</button><br><br>
+          <button class="controlButton" id="pinza">pinza</button>
+        </div>
+        <div class="buttons">
+          <span id="flashValue">Flash: 0</span>
+          <input id="flashControl" type="range" min="0" max="255" value="0">
+        </div>
+      </center>
+    </div>
+  </div>
+  <script type="module" src="{% static 'javascript/controls2.js' %}"></script>
+</body>
+</html>

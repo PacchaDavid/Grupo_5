@@ -1,0 +1,14 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}Gestion{% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'css/gestion.css' %}">
+{% endblock %}
+{% block content %}
+  <h2>Gestion del Brazo Robótico</h2>
+  <form method="POST">
+    {% csrf_token %}
+    {{userForm}}
+    <button id="send">send</button>
+  </form>
+{% endblock %}

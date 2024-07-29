@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title%}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="icon" href="{% static 'imgs/brazoIcono.ico' %}" type="image/x-icon">
+  {% block styles %}{% endblock %}
+</head>
+<body>
+  <header>
+    <h1>TeleRobot: Proyecto Integrador</h1>
+    <nav>
+      <ul>
+        <li><a href="{% url 'home' %}">Inicio</a></li>
+        <li><a href="{% url 'about_us' %}">Sobre Nosotros</a></li>
+        <li><a href="{% url 'info' %}">Información</a></li>
+        <li><a href="{% url 'controls' %}">Controles 1</a></li>
+        <li><a href="{% url 'randomuser' %}">Random User</a></li>
+        <li><a href="{% url 'chiste_del_dia' %}">Chiste del Día</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {% block content%}{% endblock %}
+  </main>
+  <footer>
+    <p>TeleRobot: Proyecto Integrador - 2024</p>
+  </footer>
+</body>
+</html>

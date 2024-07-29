@@ -1,0 +1,33 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}Materiales{% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'css/materials.css' %}">
+{% endblock %}
+{% block content %}
+      <h2>Placa ESP32-cam</h2>
+      <p>La Esp 32 Cam es una placa de la familia ESP32 de bajo costo, que incluye una cámara integrada de tamaño pequeño, ideal para la aplicación y construcción de proyectos de bricolaje.
+        Esta placa además integra WIFI, bluetooth y BLE de bajo consumo, cuenta con 2 CPU LX6 de 32 bits de alto rendimiento. Conforma una arquitectura de tubería de 7 etapas, incluso cuenta con sensores de algunos tipos, en tanto que su frecuencia principal varía de 80 MHz a 240 MHz.
+        </p>
+        <p>Más información técnica <a href="https://loboris.eu/ESP32/ESP32-CAM%20Product%20Specification.pdf" target="_blank">aquí</a></p>
+      <img src="{% static 'imgs/materiales/ESP32CAM.jpg' %}" alt="Placa-esp32cam">
+
+      <h2>Servomotores</h2>
+      <p>Son los componentes que darán movimiento al brazo robótico, se trata de motores que brindan un mayor control que los motores de corriente directa convencionales. Utilizan el ancho de pulso para funcionar y su consumo varía dependiendo del modelo. Para este proyecto hemos utilizado dos modelos de servomotores</p>
+      <h3>Micro servo sg90 </h3>
+      <img src="{% static 'imgs/materiales/sg90.jpeg' %}" alt="servo-sg90">
+      <h3>Micro servo mg90</h3>
+      <img src="{% static 'imgs/materiales/mg90.png' %}" alt="servo-mg90">
+
+      <h2>USB to TTL Serial Cable</h2>
+      <p>Es una herramienta muy útil que permite conectar la computadora con cualquier dispositivo serial TTL a traves de del puerto USB, Nosotros lo utilizamos para programar el microcontrolador de la placa ESP32-CAM, de tal manera que adopte el comportamiento deseado</p>
+      <img src="{% static 'imgs/materiales/usbtottl.jpeg' %}" alt="cable usb a ttl serial">
+
+      <h2>Protoboard</h2>
+      <p>Es una placa de pruebas que nos permite interconectar de manera temporal todos los componentes del brazo robótico permitiendo la realización de pruebas de funcionamiento así como presentaciones del proyecto. consiste en una placa de plástico con orificios interconectados de manera conveniente y ordenada para realizar proyectos electrónicos; los orificios siguen patrones específicos como por ejemplo las líneas de alimentación</p>
+      <img src="{% static 'imgs/materiales/protoboard.jpeg' %}" alt="protoboard">
+
+      <h2>Cables Jumper</h2>
+      <p>Son conectores con recubrimiento plástico que permiten cerrar un circuito para hacerlo funcionar. Se utilizan para verificar y modificar el funcionamiento de alguna pieza de hardware. Los utilizaremos para relizar las respectivas conexiones entre los componentes del brazo robótico</p>
+      <img src="{% static 'imgs/materiales/jumpers.jpeg' %}" alt="jumpers">
+{% endblock %}

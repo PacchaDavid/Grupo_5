@@ -1,0 +1,114 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}Información{% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'css/info.css' %}">
+{% endblock %}
+{% block content %}
+  <nav id="navigation">
+    <h4>Navegación</h4>
+    <ol>
+      <li><a href="#section1">-> Información General</a></li>
+      <li><a href="#section2">-> Materiales</a></li>
+      <li><a href="#section3">-> Diagramas</a></li>
+      <li><a href="#section4">-> Lenguajes</a></li>
+    </ol>
+  </nav>
+
+  <div id = "content">
+    <section id="section1">
+      <h2>informacion General</h2>
+      <h3>Antecedentes</h3>
+      <p>Este proyecto surgió como una iniciativa para abordar la recolección de residuos, centrándose en materiales reciclables. Nuestra meta principal fue desarrollar un brazo robótico capaz de ofrecer una solución integral a este desafío. Buscábamos no solo mejorar la eficiencia de la recolección, sino también promover una gestión sostenible de desechos.
+      El proyecto fue un éxito, logrando crear un sistema que integra la recolección manual. Mediante el uso de pulsadores, se facilitó el control manual del brazo robótico, permitiendo una operación intuitiva y eficaz.</p>
+      <img src="{% static 'imgs/informacion/brazo_antiguo.jpg' %}" alt="brazo logo">
+      <h3>Problemática</h3>
+      <p>En este proyecto, continuaremos mejorando el brazo robótico. En este momento, nos enfrentamos al desafío de hacer que el brazo pueda funcionar de manera remota o a distancia. Esto implica la capacidad de operar el brazo sin necesidad de estar físicamente presentes en el lugar donde se encuentra. Esta funcionalidad es crucial en situaciones de emergencia que nos impidan acceder al entorno físico. Por lo tanto, nuestro próximo paso es buscar soluciones para el control remoto del brazo.</p>
+      <img src="{% static 'imgs/informacion/redes.jpeg' %}" alt="">
+      <h3 id = "info3" >Propuesta</h3>       
+      <p>Conscientes al desafío a afrontar, se llego a la siguiente solución: manejar el dispositivo mediante una aplicación o una página web, donde además de poder controlarlo de forma remota, tendrá incorporada una cámara para captar el entorno de manera virtual.</p>
+      <img src="{% static 'imgs/informacion/brazo_nuevo.jpg' %}" alt="">
+      <h3>Objetivos</h3>
+      <ul>
+        <li>Identificar las funcionalidades que va a proporcionar la página al usuario para que este tenga una experiencia satisfactoria cumpliendo con sus expectativas, debido a ello se recurrirá a lo que se llaman historias de uso y casos de uso.</li>
+        <li>Crear un prototipo de la interfaz que se va a implementar para el manejo del brazo robótico, con la meta de hacerla intuitiva para el usuario para que este no cometa errores que puedan llegar a darle una mala experiencias.</li>
+      </ul>
+      <h3>Requerimientos</h3>
+      <h4>Para programación orientado a objetos se requiere: </h4>
+      <ul>
+      <li>Uso de los conocimientos básicos para el desarrollo de la lógica de la aplicación Web utilizando varias tecnologías, en especial Django</li>
+      <li>Conocimientos adquiridos de los diagramas de clases y los casos de uso</li>
+      <li>Implementación correcta de la interfaz, incluyendo las clases (Modelos en Django) descritas en el diagrama de Clases</li>
+      <li>Manejo de buenas prácticas de programación para un desarrollo más eficiente y mantenible</li>
+      </ul>  
+      <h4>Para Diseño de Circuitos: </h4>
+      <ul>
+        <li>Generar un buen uso del hardware del circuito por medio de los conocimientos adquiridos. </li>
+      </ul>
+    </section>
+
+    <section id="section2">
+      <h2>Materiales</h2>
+      <h3>Placa ESP32-cam</h3>
+      <p>La Esp 32 Cam es una placa de la familia ESP32 de bajo costo, que incluye una cámara integrada de tamaño pequeño, ideal para la aplicación y construcción de proyectos de bricolaje.
+        Esta placa además integra WIFI, bluetooth y BLE de bajo consumo, cuenta con 2 CPU LX6 de 32 bits de alto rendimiento. Conforma una arquitectura de tubería de 7 etapas, incluso cuenta con sensores de algunos tipos, en tanto que su frecuencia principal varía de 80 MHz a 240 MHz.
+        </p>
+        <p>Más información técnica <a href="https://loboris.eu/ESP32/ESP32-CAM%20Product%20Specification.pdf" target="_blank">aquí</a></p>
+      <img src="{% static 'imgs/materiales/ESP32CAM.jpg' %}" alt="Placa-esp32cam">
+
+      <h3>Servomotores</h3>
+      <p>Son los componentes que darán movimiento al brazo robótico, se trata de motores que brindan un mayor control que los motores de corriente directa convencionales. Utilizan el ancho de pulso para funcionar y su consumo varía dependiendo del modelo. Para este proyecto hemos utilizado dos modelos de servomotores</p>
+      <h3>Micro servo sg90 </h3>
+      <img src="{% static 'imgs/materiales/sg90.jpeg' %}" alt="servo-sg90">
+      <h3>Micro servo mg90</h3>
+      <img src="{% static 'imgs/materiales/mg90.png' %}" alt="servo-mg90">
+
+      <h3>USB to TTL Serial Cable</h3>
+      <p>Es una herramienta muy útil que permite conectar la computadora con cualquier dispositivo serial TTL a traves de del puerto USB, Nosotros lo utilizamos para cargar el programa que define el movimiento de brazo haciendo uso de los datos que llegan desde otro programa que en este caso es el apartado de controles en nuestra página web</p>
+      <img src="{% static 'imgs/materiales/usbtottl.jpeg' %}" alt="cable usb a ttl serial">
+
+      <h3>Protoboard</h3>
+      <p>Es una placa de pruebas que nos permite interconectar de manera temporal todos los componentes del brazo robótico permitiendo la realización de pruebas de funcionamiento así como presentaciones del proyecto. consiste en una placa de plástico con orificios interconectados de manera conveniente y ordenada para realizar proyectos electrónicos; los orificios siguen patrones específicos como por ejemplo las líneas de alimentación</p>
+      <img src="{% static 'imgs/materiales/protoboard.jpeg' %}" alt="protoboard">
+
+      <h3>Cables Jumper</h3>
+      <p>Son conectores con recubrimiento plástico que permiten cerrar un circuito para hacerlo funcionar. Se utilizan para verificar y modificar el funcionamiento de alguna pieza de hardware. Los utilizaremos para relizar las respectivas conexiones entre los componentes del brazo robótico</p>
+      <img src="{% static 'imgs/materiales/jumpers.jpeg' %}" alt="jumpers">
+    </section>
+  
+    <section id="section3">
+      <h2>Diagrama de clases UML</h2> 
+      <img src="{% static 'imgs/graphics/brazoRobotico.png' %}" alt="diagrama de clases UML" class="graphics">
+      <h2>Diagrama de Casos de uso</h2>
+      <img src="{% static 'imgs/graphics/casosDeUso.png' %}" alt="Diagrama de Casos de Uso" class="graphics">
+      <h2>Historias de Usuario</h2>
+      <img src="{% static 'imgs/graphics/UH1.png' %}" alt="historia1" class="graphics">
+      <img src="{% static 'imgs/graphics/UH2.png' %}" alt="historia2" class="graphics">
+      <img src="{% static 'imgs/graphics/UH3.png' %}" alt="historia3" class="graphics">
+    </section>
+  
+    <section id="section4">
+      <h2>Plataformas y lenguajes utilizados</h2>
+      <h3>Django: Python Framework</h3>
+      <p>Django es un framework de desarrollo web de código abierto, escrito en Python. Sigue el principio de DRY (Don't Repeat Yourself) y se basa en el patrón de diseño MVC (Modelo Vista Controlador). Django es un framework de alto nivel que fomenta el desarrollo rápido y limpio, con un diseño pragmático y una sintaxis sencilla.</p>
+      <p>Lo hemos utilizado para el desarrollo backend de la página web, que muestra la información y da acceso a los controles del brazo Robótico</p>
+      <a href="https://www.djangoproject.com/" target="_blank"><img src="{% static 'imgs/icons/django.png' %}" alt="django logo"></a>
+      <h3>HTML</h3>
+      <p>HTML (HyperText Markup Language) es el lenguaje de marcado estándar para la creación de páginas web. Define la estructura de una página web y su contenido, como texto, imágenes, videos, formularios, etc.</p>
+      <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"><img src="{% static 'imgs/icons/html.png' %}" alt="html logo"></a>
+      <h3>CSS</h3>
+      <p>CSS (Cascading Style Sheets) es un lenguaje de diseño que se utiliza para dar estilo a las páginas web. Permite controlar la apariencia de los elementos de una página, como el color, la fuente, el tamaño, el espaciado, etc.</p>
+      <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"><img src="{% static 'imgs/icons/css.png' %}" alt="css logo"></a>
+      <h3>JavaScript</h3>
+      <p>JavaScript es un lenguaje de programación que se utiliza para crear interactividad en las páginas web. Permite añadir funcionalidades dinámicas, como animaciones, efectos visuales, validación de formularios, etc.</p>
+      <p>Este poderoso lenguaje fue utilizado para implementar los controles del brazo robótico y dar algunas funcionalidades menores a nuestra página como algunas animaciones</p>
+      <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"><img src="{% static 'imgs/icons/javascript.png' %}" alt="js logo"></a>
+      <h3>Arduino IDE</h3>
+      <p>Arduino IDE es un entorno de desarrollo integrado (IDE) que se utiliza para programar placas Arduino. Proporciona un editor de código, un compilador y un cargador de arranque para cargar el código en la placa Arduino.</p>
+      <p>Lo hemos utilizado para programar el microcontrolador de la placa ESP32-CAM, haciendo que adopte el comportamiento deseado</p>
+      <a href="https://www.arduino.cc/en/software" target="_blank"><img src="{% static 'imgs/icons/arduino.png' %}" alt="arduino logo"></a>
+      
+    </section>
+  </div>
+  
+{% endblock %}

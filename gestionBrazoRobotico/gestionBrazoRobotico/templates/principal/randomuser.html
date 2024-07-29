@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block title %}Random User{% endblock %}
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'css/randomuser.css' %}">
+{% endblock %}
+{% block content %}
+<h2>Usuario aleatorio generado por RandomUser API</h2>
+
+<h3>{{long_name}}</h3>
+<img src="{{image}}" alt="imagen_del_usuario">
+<h4>Información</h4>
+<p>País de origen: {{country}}</p>
+<p>Ciudad natal: {{city}}</p>
+<p>Correo electrónico: {{email}}</p>
+{% endblock %}
