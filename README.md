@@ -17,6 +17,8 @@ HISTORIAS DE USUARIO
 ![UH2](https://github.com/user-attachments/assets/37bae591-c3cb-4ee4-b7c7-b6d45b572709)
 ![UH3](https://github.com/user-attachments/assets/271452de-4cd6-4af8-887f-2e9a373f9304)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 INSTRUCCIONES PARA UTILIZAR EL CODIGO DE LA PAGINA WEB
 
 Prerrequisitos
@@ -44,6 +46,8 @@ SIGA LAS INSTRUCCIONES
 7. Ejecutar el comando 'python manage.py runserver' en la consola
 8. Abrir el navegador e ingresar a la ruta 'localhost:8000'
 9. Navegar a través del contenido de la página :)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 NAVEGACION A TRAVÉS DE LA PÁGINA WEB
 
