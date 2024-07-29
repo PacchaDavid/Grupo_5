@@ -47,7 +47,7 @@ NAVEGACION A TRAVÉS DE LA PÁGINA WEB
 
 ![image](https://github.com/user-attachments/assets/e09b0910-603b-4a16-b16b-5426269b5a1f)
 
-Es la ruta principal de nuestro proyecto que contiene un párrafo de bienvenida, un enlace al modelo en 3D del brazo robótico y dos enlaces hacia este y otro repositorio del proyecto
+Es la ruta principal de nuestro proyecto que contiene un párrafo de bienvenida, un enlace al modelo en 3D del brazo robótico y otro hacia el repositorio principal del proyecto, es decir, este repositorio.
 
 -> Ruta 'aboutus/'
 
