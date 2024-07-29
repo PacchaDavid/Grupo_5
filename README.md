@@ -21,7 +21,8 @@ Prerrequisitos
 - Tener instalado python en su equipo
 - Tener instalado el gestor de dependencias pip
 - Tener configurado python en las variables de entorno de su sistema
-- Contar con un IDE de propósito general como Visual Studio Code o uno más orientado a django como Pycharm 
+- Contar con un IDE de propósito general como Visual Studio Code o uno más orientado a django como Pycharm
+- Tener virtualenv en su equipo (se puede obtener mediante pip) 
 
 Aquí algunos enlaces para completar estos requisitos
 
@@ -36,10 +37,11 @@ SIGA LAS INSTRUCCIONES
 1. Clonar o descargar este repositorio en su máquina de trabajo.
 2. Utilizar algún Entorno de desarrollo que le permita interactuar con la consola de comandos
 3. Abrir la carpeta "gestionBrazoRobótico" desde su Entorno de desarrollo
-4. Ejecutar el comando 'pip install -r requirements.txt' en la consola de su entorno
-5. Ejecutar el comando 'python manage.py runserver' en la consola
-6. Abrir el navegador e ingresar a la ruta 'localhost:8000'
-7. Navegar a través del contenido de la página :)
+4. Iniciar un nuevo entorno virtual (opcional y recomendado), si tiene virtualenv puede utilizar el comando 'virutalenv <nombre_del_entorno_virtual>'
+6. Ejecutar el comando 'pip install -r requirements.txt' en la consola de su entorno
+7. Ejecutar el comando 'python manage.py runserver' en la consola
+8. Abrir el navegador e ingresar a la ruta 'localhost:8000'
+9. Navegar a través del contenido de la página :)
 
 NAVEGACION A TRAVÉS DE LA PÁGINA WEB
 
