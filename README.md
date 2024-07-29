@@ -41,34 +41,55 @@ SIGA LAS INSTRUCCIONES
 6. Abrir el navegador e ingresar a la ruta 'localhost:8000'
 7. Navegar a través del contenido de la página :)
 
-MATERIALES QUE SE USARAN PARA LA REALIZACION DE NUESTRO BRAZO ROBOTICO A CONTROL 
+NAVEGACION A TRAVÉS DE LA PÁGINA WEB
 
-Placa Controladora ESP-32: ESP32-CAM, es un dispositivo que puede llamarse un todo en uno. Aparte de la conectividad Wifi y Bluetooth que viene de fábrica, pines GPIO, se le han añadido dos opciones más. 
-Lleva integrado una pequeña cámara de video y una conexión para una tarjeta MicroSD, donde podremos almacenar fotos o videos.
+-> Ruta raiz '/'
 
-![image](https://github.com/PacchaDavid/Grupo_5/assets/166523336/4a062ce2-a50e-4b93-b739-308836418ee4)
+![image](https://github.com/user-attachments/assets/e09b0910-603b-4a16-b16b-5426269b5a1f)
+
+Es la ruta principal de nuestro proyecto que contiene un párrafo de bienvenida, un enlace al modelo en 3D del brazo robótico y dos enlaces hacia este y otro repositorio del proyecto
+
+-> Ruta 'aboutus/'
+
+![image](https://github.com/user-attachments/assets/0755f733-146a-41cc-ac88-bfb4b01f92aa)
+
+Es la vista que muestra los integrantes de nuestro equipo fraternal e inseparable de trabajo, junto con un párrafo de descripción del proyecto en general
+
+-> Ruta 'info/'
+
+Es la primera vista protegida por un decorador '@login_required' que significa que solo los usuarios logueados pueden acceder a la vista.
+Si desea ver el contenido de esta vista, usted puede utilizar las siguientes credenciales para loguearse.
+
+User: 'pis_grupo_5'
+
+Password: 'ProyectoIntegradorDeSaberesII'
+
+![image](https://github.com/user-attachments/assets/4fd36a39-0d28-4e52-a145-d9121276e56f)
+
+El contenido de esta vista consiste en información general del proyecto, así como enlaces a distintas fuentes de información técnica, también se encuentran los diagramas sobre los que se basa este proyecto
+
+-> Ruta 'controls2/'
+
+![image](https://github.com/user-attachments/assets/7e1c3bfd-f365-4e53-8859-939fc41b3706)
+
+Este es el programa que nos ayuda a enviar datos al brazo robótico y a recibir las imágenes enviadas desde él. Posee una barra superior de navegación hacia el inicio (ruta '/') y otra hacia una vista de ayuda para el usuario.
+
+-> Ayuda para el Usuario
+
+![image](https://github.com/user-attachments/assets/807a7d7b-784b-4a92-aa13-0b9d63fcec40)
+
+Se trata de una imagen descriptiva y con algunos pasos secuenciales para conectar el brazo a la interfaz
 
 
-Servomotores SG 90: Es un pequeño actuador rotativo o bien motor, que permite un control preciso en posición angular, este servomotor puede rotar de 0° hasta 180°, su voltaje de operación que va los 4.8 a 6 VDC. Este servo incluye 3 brazos y 3 tornillos, cuenta con un cable de hasta 25cm.
-Este tipo de servomotores son utilizado en gran variedad de proyectos de electrónica, robótica, carros de control remoto, aeronaves y más. Funcionan con la mayoría de tarjetas electrónicas de control con microcontroladores, como por ejemplo las tarjetas de Arduino, Nodemcu, Esp32, Pic´s y Raspberry Pi y otras.
+Otras vistas: 
 
+- 'api/' sirve contenido en formato Json para otros desarrolladores está basado netamente en el diagrama de clases.
+- 'randomuser/' es una vista de prueba para testear el API pública Random User
+- 'chiste/' es una vista que contiene un chiste proporcionado por la Joke API
+- 'login/' es la vista que proporciona al usuario una manera fácil de loguearse
+- 'logout/' al ingresar esta ruta se cierra la sesión y se redirecciona a la vista login/
+- 'register/' es una vista para crear un nuevo usuario con el cual acceder a las vistas protegidas por '@login_required'
 
-![image](https://github.com/PacchaDavid/Grupo_5/assets/166523336/fbe0caed-2daa-48ca-b68d-33cc1d429edd)
-
-
-Cables Jumper: El cable jumper proporciona una manera fácil para construir su propio circuito en una placa. Estos cables son flexibles con ambos extremos para una fácil conexión al Protoboard.
-
-
-![image](https://github.com/PacchaDavid/Grupo_5/assets/166523336/fe59c633-8834-43fe-aba2-679634e63e1c)
-
-
-Placa de Pruebas Protoboard: Una placa de pruebas o placa de inserción (en inglés protoboard o breadboard) es un tablero con orificios que se encuentran conectados eléctricamente entre sí de manera interna, habitualmente siguiendo patrones de líneas, en el cual se pueden insertar componentes electrónicos, cables para el armado, prototipado de circuitos electrónicos y sistemas similares.
-
-
-![image](https://github.com/PacchaDavid/Grupo_5/assets/166523336/4bbc8cb9-af30-4628-b69c-68c073d4b21d)
-
-
-Como podemos notar estos son los materiales basicos que implementaremos para la realizacion de nuestro proyecto integrador, mediante el paso de las unidades iremos añadiendo mas componentes esenciales para la contruccion optima y eficaz de nuestro brazo a control remoto hasta tener el producto final.
 
 
 Enlace hacia página web alternativa: https://pacchadavid.github.io/
