@@ -22,6 +22,7 @@ Prerrequisitos
 - Tener instalado el gestor de dependencias pip
 - Tener configurado python en las variables de entorno de su sistema
 - Contar con un IDE de propósito general como Visual Studio Code o uno más orientado a django como Pycharm 
+
 Aquí algunos enlaces para completar estos requisitos
 
 https://www.bing.com/ck/a?!&&p=fda7a64617951239JmltdHM9MTcyMjEyNDgwMCZpZ3VpZD0xNmQ5ODcwNC0zM2I2LTZkNDgtMjhjZi05M2IxMzIxOTZjYWUmaW5zaWQ9NTIwMw&ptn=3&ver=2&hsh=3&fclid=16d98704-33b6-6d48-28cf-93b132196cae&psq=como+instalar+python&u=a1aHR0cHM6Ly9raW5zdGEuY29tL2VzL2Jhc2UtZGUtY29ub2NpbWllbnRvL2luc3RhbGFyLXB5dGhvbi8&ntb=1
