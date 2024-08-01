@@ -5,7 +5,8 @@ Este es el repositorio oficial del Proyecto: TeleRobot Grupo5... Aquí es donde 
 
 DIAGRAMA DE CLASES DEL PROYECTO
 
-![brazoRobotico drawio (1)](https://github.com/user-attachments/assets/0298ee00-f094-4fe6-8181-1a9ff61a7582)
+![brazoRobotico](https://github.com/user-attachments/assets/87115058-b60f-45dd-9204-42fc35e308d5)
+
 
 CASOS DE USO
 
